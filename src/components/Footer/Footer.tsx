@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="footer-container">
         <div className="footer-grid">
           <div className="footer-section">
-            <h3 className="footer-logo">Real Estate Services</h3>
+            <h3 className="footer-logo">Emily Real Estate</h3>
             <p className="footer-description">
               We make Real Estate a Breeze. Experience exceptional real estate service across South Africa.
             </p>
@@ -31,8 +31,8 @@ const Footer = () => {
             <h4 className="footer-title">Contact</h4>
             <div className="gold-line"></div>
             <ul className="footer-contact">
-              <li>Tel: 010 597 0836</li>
-              <li>info@real-estate-services.co.za</li>
+              <li>Tel: 076 099 4109</li>
+              <li>emily@realestateservices.co.za</li>
               <li>South Africa</li>
             </ul>
             <div className="footer-property24">
@@ -55,7 +55,7 @@ const Footer = () => {
         </div>
 
         <div className="footer-bottom">
-          <p>&copy; 2025 Real Estate Services. All rights reserved.</p>
+          <p>&copy; 2025 Emily Real Estate. All rights reserved.</p>
         </div>
       </div>
     </footer>

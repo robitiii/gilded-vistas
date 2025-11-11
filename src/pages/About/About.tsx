@@ -16,7 +16,7 @@ const About = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <h1 className="page-title">About Real Estate Services</h1>
+            <h1 className="page-title">About Emily Real Estate</h1>
             <div className="gold-line" style={{ margin: '20px auto' }}></div>
             <p className="page-subtitle">We Make Real Estate a Breeze</p>
           </motion.div>
@@ -36,7 +36,7 @@ const About = () => {
             <h2 className="section-title">Our Mission</h2>
             <div className="gold-line" style={{ margin: '15px auto 30px' }}></div>
             <p className="mission-text">
-              At Real Estate Services, we are dedicated to making your property journey as smooth and stress-free as possible. 
+              At Emily Real Estate, we are dedicated to making your property journey as smooth and stress-free as possible. 
               With years of experience in the South African property market, we understand the unique needs of buyers, sellers, 
               and renters across the region.
             </p>
@@ -70,12 +70,12 @@ const About = () => {
             className="team-member-card"
           >
             <div className="member-info">
-              <h3 className="member-name">Emily Thompson</h3>
+              <h3 className="member-name">Emily M Madithapa</h3>
               <p className="member-title">Principal Estate Agent</p>
               <div className="gold-line" style={{ margin: '15px 0 20px' }}></div>
               
               <p className="member-bio">
-                Emily Thompson is the driving force behind Real Estate Services, bringing over 15 years of 
+                Emily M Madithapa is the driving force behind Emily Real Estate, bringing over 15 years of 
                 expertise in the South African property market. With a passion for connecting people with their 
                 perfect homes, Emily has built a reputation for exceptional client service and market knowledge.
               </p>
@@ -89,8 +89,8 @@ const About = () => {
               <p className="member-bio">
                 Beyond her professional expertise, Emily is actively involved in the local community and stays 
                 ahead of market trends through continuous education and networking with industry professionals. 
-                Her dedication to excellence and client satisfaction has made Real Estate Services a trusted 
-                name in property services.
+                Her dedication to excellence and client satisfaction has made Emily Real Estate a trusted
+                name in property services. Her commitment to excellence and personalized approach has helped countless families find their dream homes across South Africa.
               </p>
 
               <div className="member-credentials">

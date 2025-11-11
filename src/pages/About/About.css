@@ -41,6 +41,14 @@
   margin-bottom: 20px;
 }
 
+@media (min-width: 1024px) {
+  .mission-text {
+    font-size: 1.15rem;
+    line-height: 1.9;
+    letter-spacing: 0.3px;
+  }
+}
+
 /* Team Section */
 .team-section {
   background-color: var(--soft-gray);
@@ -86,6 +94,14 @@
   color: var(--medium-gray);
   margin-bottom: 20px;
   text-align: left;
+}
+
+@media (min-width: 1024px) {
+  .member-bio {
+    font-size: 1.1rem;
+    line-height: 1.9;
+    letter-spacing: 0.3px;
+  }
 }
 
 .member-credentials {

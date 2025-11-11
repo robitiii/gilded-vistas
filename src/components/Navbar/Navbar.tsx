@@ -20,7 +20,7 @@ const Navbar = () => {
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="navbar-container">
         <Link to="/" className="navbar-logo">
-          <span className="logo-text">Real Estate Services</span>
+          <span className="logo-text">Emily Real Estate</span>
         </Link>
 
         <div className={`navbar-menu ${mobileMenuOpen ? 'active' : ''}`}>
@@ -45,18 +45,15 @@ const Navbar = () => {
           >
             To Rent
           </Link>
-          <Link 
-            to="/about" 
+          <Link
+            to="/about"
             className={`navbar-link ${location.pathname === '/about' ? 'active' : ''}`}
             onClick={() => setMobileMenuOpen(false)}
           >
             Meet the Team
           </Link>
-          <a href="#contact" className="navbar-link" onClick={() => setMobileMenuOpen(false)}>
-            Join Us
-          </a>
-          <Link 
-            to="/about" 
+          <Link
+            to="/about"
             className={`navbar-link ${location.pathname === '/about' ? 'active' : ''}`}
             onClick={() => setMobileMenuOpen(false)}
           >
@@ -64,9 +61,6 @@ const Navbar = () => {
           </Link>
           <a href="#contact" className="navbar-link" onClick={() => setMobileMenuOpen(false)}>
             Contact Us
-          </a>
-          <a href="#" className="navbar-link navbar-login" onClick={() => setMobileMenuOpen(false)}>
-            Login
           </a>
         </div>
 
