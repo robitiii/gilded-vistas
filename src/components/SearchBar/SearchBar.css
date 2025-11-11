@@ -1,0 +1,129 @@
+.search-bar {
+  width: 100%;
+  background-color: rgba(51, 51, 51, 0.9);
+  padding: 20px;
+  margin-top: -30px;
+  position: relative;
+  z-index: 10;
+}
+
+.search-row {
+  display: flex;
+  gap: 0;
+  max-width: 1400px;
+  margin: 0 auto;
+  align-items: stretch;
+}
+
+.search-type-wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white);
+  padding: 10px 15px;
+  min-width: 120px;
+}
+
+.search-label {
+  font-size: 0.85rem;
+  color: var(--medium-gray);
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.search-type-select {
+  border: none;
+  background: transparent;
+  font-size: 1rem;
+  color: var(--black);
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+  appearance: none;
+  padding-right: 10px;
+}
+
+.search-type-select:focus {
+  outline: none;
+}
+
+.search-input {
+  flex: 1;
+  padding: 15px 20px;
+  border: none;
+  font-size: 1rem;
+  font-family: var(--font-body);
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.search-input::placeholder {
+  color: var(--medium-gray);
+}
+
+.search-input:focus {
+  outline: none;
+}
+
+.search-webref {
+  width: 200px;
+  padding: 15px 20px;
+  border: none;
+  font-size: 1rem;
+  font-family: var(--font-body);
+  background-color: rgba(255, 255, 255, 0.2);
+  color: var(--white);
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.search-webref::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.search-webref:focus {
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.search-button {
+  padding: 15px 50px;
+  background-color: var(--gold);
+  color: var(--black);
+  border: none;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: var(--transition);
+  letter-spacing: 1px;
+}
+
+.search-button:hover {
+  background-color: #c19b2f;
+  transform: translateY(-2px);
+}
+
+/* Mobile Responsive */
+@media (max-width: 968px) {
+  .search-bar {
+    padding: 15px;
+  }
+
+  .search-row {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .search-type-wrapper {
+    min-width: auto;
+  }
+
+  .search-input,
+  .search-webref {
+    width: 100%;
+  }
+
+  .search-button {
+    width: 100%;
+    padding: 15px;
+  }
+}

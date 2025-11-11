@@ -7,11 +7,11 @@ const Footer = () => {
       <div className="footer-container">
         <div className="footer-grid">
           <div className="footer-section">
-            <h3 className="footer-logo">LuxeEstate</h3>
+            <h3 className="footer-logo">Real Estate Services</h3>
             <p className="footer-description">
-              Your gateway to the world's finest luxury properties. 
-              Experience exceptional real estate with unparalleled service.
+              We make Real Estate a Breeze. Experience exceptional real estate service across South Africa.
             </p>
+            <p className="footer-credit">Real Estate Websites by RobQtech</p>
           </div>
 
           <div className="footer-section">
@@ -19,8 +19,11 @@ const Footer = () => {
             <div className="gold-line"></div>
             <ul className="footer-links">
               <li><Link to="/">Home</Link></li>
-              <li><Link to="/properties">Properties</Link></li>
-              <li><a href="#contact">Contact</a></li>
+              <li><Link to="/properties">For Sale</Link></li>
+              <li><Link to="/properties?type=rent">To Rent</Link></li>
+              <li><Link to="/about">Meet the Team</Link></li>
+              <li><Link to="/about">About Us</Link></li>
+              <li><a href="#contact">Contact Us</a></li>
             </ul>
           </div>
 
@@ -28,25 +31,31 @@ const Footer = () => {
             <h4 className="footer-title">Contact</h4>
             <div className="gold-line"></div>
             <ul className="footer-contact">
-              <li>+1 (555) 123-4567</li>
-              <li>info@luxeestate.com</li>
-              <li>Beverly Hills, CA 90210</li>
+              <li>Tel: 010 597 0836</li>
+              <li>info@real-estate-services.co.za</li>
+              <li>South Africa</li>
             </ul>
+            <div className="footer-property24">
+              <a href="https://www.property24.com/" target="_blank" rel="noopener noreferrer">
+                Visit us on Property 24
+              </a>
+            </div>
           </div>
 
           <div className="footer-section">
-            <h4 className="footer-title">Follow Us</h4>
+            <h4 className="footer-title">Legal</h4>
             <div className="gold-line"></div>
-            <div className="footer-social">
-              <a href="#" aria-label="Facebook">Facebook</a>
-              <a href="#" aria-label="Instagram">Instagram</a>
-              <a href="#" aria-label="LinkedIn">LinkedIn</a>
-            </div>
+            <ul className="footer-links">
+              <li><a href="#">Terms And Conditions</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Cookie Policy</a></li>
+              <li><a href="#">Cookie Settings</a></li>
+            </ul>
           </div>
         </div>
 
         <div className="footer-bottom">
-          <p>&copy; 2025 LuxeEstate. All rights reserved.</p>
+          <p>&copy; 2025 Real Estate Services. All rights reserved.</p>
         </div>
       </div>
     </footer>

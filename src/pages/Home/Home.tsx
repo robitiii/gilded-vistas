@@ -1,7 +1,9 @@
 import { motion } from 'framer-motion';
 import Navbar from '../../components/Navbar/Navbar';
 import HeroSection from '../../components/HeroSection/HeroSection';
+import SearchBar from '../../components/SearchBar/SearchBar';
 import PropertyCard from '../../components/PropertyCard/PropertyCard';
+import PopularAreas from '../../components/PopularAreas/PopularAreas';
 import Footer from '../../components/Footer/Footer';
 import { listings } from '../../data/listings';
 import './Home.css';
@@ -13,6 +15,56 @@ const Home = () => {
     <div className="home">
       <Navbar />
       <HeroSection />
+      <SearchBar />
+      
+      {/* Quick Action Cards */}
+      <section className="quick-actions">
+        <div className="container">
+          <div className="actions-grid">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+              className="action-card"
+            >
+              <div className="action-icon">🏠</div>
+              <h3 className="action-title">LIST <span className="gold-text">YOUR PROPERTY</span></h3>
+              <p className="action-description">
+                If you are looking to sell your property, look no further. We will assist you in the process of selling your property. Fill in this form and we will contact you. <strong>CLICK HERE</strong>
+              </p>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="action-card"
+            >
+              <div className="action-icon">🔍</div>
+              <h3 className="action-title">PROPERTY <span className="gold-text">FINDER</span></h3>
+              <p className="action-description">
+                If you are looking for the perfect home that will suit your family and your budget, then we are here to help. Fill in this form and we will contact you. <strong>CLICK HERE</strong>
+              </p>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+              className="action-card"
+            >
+              <div className="action-icon">🔔</div>
+              <h3 className="action-title">PROPERTY <span className="gold-text">ALERTS</span></h3>
+              <p className="action-description">
+                Want to be kept in the loop when new properties are listed in your area that matches your requirements? Register for our property alerts. <strong>CLICK HERE</strong>
+              </p>
+            </motion.div>
+          </div>
+        </div>
+      </section>
       
       {/* Featured Properties Section */}
       <section className="featured-properties">
@@ -147,6 +199,8 @@ const Home = () => {
           </motion.form>
         </div>
       </section>
+
+      <PopularAreas />
 
       <Footer />
     </div>

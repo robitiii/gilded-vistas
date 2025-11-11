@@ -1,0 +1,206 @@
+.about-page {
+  min-height: 100vh;
+}
+
+/* About Hero */
+.about-hero {
+  background-color: var(--soft-gray);
+  padding: 120px 0 80px;
+  text-align: center;
+}
+
+.page-title {
+  font-family: var(--font-heading);
+  font-size: 3rem;
+  color: var(--black);
+  margin-bottom: 10px;
+}
+
+.page-subtitle {
+  font-size: 1.5rem;
+  color: var(--gold);
+  font-style: italic;
+}
+
+/* Mission Section */
+.mission-section {
+  background-color: var(--white);
+  padding: 100px 0;
+}
+
+.mission-content {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.mission-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--medium-gray);
+  margin-bottom: 20px;
+}
+
+/* Team Section */
+.team-section {
+  background-color: var(--soft-gray);
+  padding: 100px 0;
+}
+
+.team-member-card {
+  max-width: 900px;
+  margin: 0 auto;
+  background: var(--white);
+  padding: 60px;
+  border: 1px solid var(--light-gray);
+  transition: var(--transition);
+}
+
+.team-member-card:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border-color: var(--gold);
+}
+
+.member-info {
+  text-align: center;
+}
+
+.member-name {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  color: var(--black);
+  margin-bottom: 5px;
+}
+
+.member-title {
+  font-size: 1.2rem;
+  color: var(--gold);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.member-bio {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--medium-gray);
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.member-credentials {
+  margin-top: 40px;
+  text-align: left;
+  padding: 30px;
+  background-color: var(--soft-gray);
+  border-left: 3px solid var(--gold);
+}
+
+.member-credentials h4 {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  color: var(--black);
+  margin-bottom: 20px;
+}
+
+.member-credentials ul {
+  list-style: none;
+  padding: 0;
+}
+
+.member-credentials li {
+  font-size: 1.05rem;
+  color: var(--medium-gray);
+  margin-bottom: 12px;
+  padding-left: 25px;
+  position: relative;
+}
+
+.member-credentials li::before {
+  content: '▸';
+  color: var(--gold);
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+/* Values Section */
+.values-section {
+  background-color: var(--white);
+  padding: 100px 0;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+}
+
+.value-card {
+  background: var(--soft-gray);
+  padding: 40px 30px;
+  text-align: center;
+  transition: var(--transition);
+  border: 1px solid var(--light-gray);
+}
+
+.value-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border-color: var(--gold);
+}
+
+.value-icon {
+  font-size: 3rem;
+  color: var(--gold);
+  margin-bottom: 20px;
+}
+
+.value-title {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: var(--black);
+}
+
+.value-description {
+  color: var(--medium-gray);
+  line-height: 1.6;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .page-title {
+    font-size: 2rem;
+  }
+
+  .page-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .about-hero {
+    padding: 80px 0 60px;
+  }
+
+  .mission-section,
+  .team-section,
+  .values-section {
+    padding: 60px 0;
+  }
+
+  .team-member-card {
+    padding: 30px 20px;
+  }
+
+  .member-name {
+    font-size: 1.8rem;
+  }
+
+  .member-credentials {
+    padding: 20px;
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}

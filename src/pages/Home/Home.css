@@ -2,6 +2,59 @@
   min-height: 100vh;
 }
 
+/* Quick Actions Section */
+.quick-actions {
+  background-color: var(--white);
+  padding: 60px 0;
+}
+
+.actions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.action-card {
+  background: var(--white);
+  padding: 40px 30px;
+  text-align: center;
+  border: 1px solid var(--light-gray);
+  transition: var(--transition);
+}
+
+.action-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border-color: var(--gold);
+}
+
+.action-icon {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+}
+
+.action-title {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  color: var(--black);
+  font-weight: 700;
+}
+
+.gold-text {
+  color: var(--gold);
+}
+
+.action-description {
+  color: var(--medium-gray);
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.action-description strong {
+  color: var(--black);
+  font-weight: 700;
+}
+
 /* Featured Properties Section */
 .featured-properties {
   background-color: var(--white);

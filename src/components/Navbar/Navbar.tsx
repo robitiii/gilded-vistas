@@ -20,7 +20,7 @@ const Navbar = () => {
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="navbar-container">
         <Link to="/" className="navbar-logo">
-          <span className="logo-text">LuxeEstate</span>
+          <span className="logo-text">Real Estate Services</span>
         </Link>
 
         <div className={`navbar-menu ${mobileMenuOpen ? 'active' : ''}`}>
@@ -33,13 +33,40 @@ const Navbar = () => {
           </Link>
           <Link 
             to="/properties" 
-            className={`navbar-link ${location.pathname === '/properties' ? 'active' : ''}`}
+            className={`navbar-link ${location.pathname.startsWith('/properties') ? 'active' : ''}`}
             onClick={() => setMobileMenuOpen(false)}
           >
-            Properties
+            For Sale
+          </Link>
+          <Link 
+            to="/properties?type=rent" 
+            className={`navbar-link`}
+            onClick={() => setMobileMenuOpen(false)}
+          >
+            To Rent
+          </Link>
+          <Link 
+            to="/about" 
+            className={`navbar-link ${location.pathname === '/about' ? 'active' : ''}`}
+            onClick={() => setMobileMenuOpen(false)}
+          >
+            Meet the Team
           </Link>
           <a href="#contact" className="navbar-link" onClick={() => setMobileMenuOpen(false)}>
-            Contact
+            Join Us
+          </a>
+          <Link 
+            to="/about" 
+            className={`navbar-link ${location.pathname === '/about' ? 'active' : ''}`}
+            onClick={() => setMobileMenuOpen(false)}
+          >
+            About Us
+          </Link>
+          <a href="#contact" className="navbar-link" onClick={() => setMobileMenuOpen(false)}>
+            Contact Us
+          </a>
+          <a href="#" className="navbar-link navbar-login" onClick={() => setMobileMenuOpen(false)}>
+            Login
           </a>
         </div>
 

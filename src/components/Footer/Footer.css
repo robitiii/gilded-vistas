@@ -24,6 +24,27 @@
   color: var(--gold);
 }
 
+.footer-credit {
+  font-size: 0.9rem;
+  color: var(--light-gray);
+  margin-top: 10px;
+  font-style: italic;
+}
+
+.footer-property24 {
+  margin-top: 15px;
+}
+
+.footer-property24 a {
+  color: var(--gold);
+  font-weight: 600;
+  transition: var(--transition);
+}
+
+.footer-property24 a:hover {
+  color: var(--white);
+}
+
 .footer-description {
   color: var(--light-gray);
   line-height: 1.6;
